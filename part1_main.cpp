@@ -48,8 +48,14 @@ int main()
         std::vector<Vehicle> vehicles;
 
         // TODO: Add the three Vehicle objects to the vector using the push_back() function
-
+        vehicles.push_back(muscleCar);
+        vehicles.push_back(electric);
+        vehicles.push_back(suv);
         // TODO: Print out each Vehicle by looping through the vector and calling the Display() function for each Vehicle object
+        for (std::size_t i = 0; i < vehicles.size(); ++i)
+        {
+            vehicles[i].Display();
+        }
     }
 
     return 0;
